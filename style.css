@@ -1,0 +1,28 @@
+body {
+	background: #888;
+	color: #fff;
+}
+
+h1 {
+	text-align: center;
+}
+
+#mainTable {
+	width: 100%;
+}
+
+.boardTable img {
+	display: block;
+}
+
+.boardTable {
+	background: #000;
+}
+
+.field_:hover {
+	opacity: 0.5;
+}
+
+.chat {
+	overflow: scroll;
+}

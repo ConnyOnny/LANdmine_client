@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>LANdmine</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script type="text/javascript" src="landmine.js"></script>
+</head>
+<body>
+<noscript><b>Sorry, you need JavaScript activated to run this game.</b></noscript>
+<h1>LANdmine</h1>
+<input type="button" value="Start new Game" onclick="newGame()"/><span id="mineCountDisplay"></span>
+<table id="mainTable" border="1">
+<colgroup><col width="80%"/><col width="20%"/></colgroup>
+<tr><td id="boardSpace" rowspan="2"><p>Loading game...</p></td><td style="vertical-align:top"><div id="blist"></div></td></tr><tr><td style="vertical-align:bottom"><div id="chat"></div><table border="0" cellspacing="0" cellpadding="0"><tr><td><input type="text" id="chatmsg"/></td><td><input type="submit" value="send" onclick="sendmsg()"/></td></tr></table></div></td></tr>
+</table>
+<script type="text/javascript">LANdmine()</script>
+</body>
+</html>
