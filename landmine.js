@@ -100,6 +100,10 @@ function onMessage (evt) {
 		}
 		html += "</table>"
 		document.getElementById("boardSpace").innerHTML = html;
+		for (var id in playerScore) {
+			playerScore[id] = 0;
+		}
+		updatePlist();
 	} else if (what.indexOf("PN") == 0) {
 		var info = what.substring(2).split(" ");
 		var newnick = strip(info[1]);
@@ -133,6 +137,8 @@ function onMessage (evt) {
 	} else if (what.indexOf("A") == 0) { // admin
 		adminPlayer = what.substring(1)
 		updatePlist();
+	} else if (what.indexOf("OVER") == 0) {
+		alert ("game over");
 	} else {
 		chatLog("unknown event: "+evt.data)
 	}
